@@ -1,6 +1,12 @@
 Mm::Application.routes.draw do
   get 'home' => 'pages#home'
-  get 'contact' => 'pages#contact'
+  get 'details' => 'pages#details'
+  get 'photos' => 'pages#photos'
+  get 'rsvp' => 'pages#rsvp'
+  get 'directions' => 'pages#directions'
+  get 'hotels' => 'pages#hotels'
+  get 'activities' => 'pages#activities'
+  get 'registry' => 'pages#registry'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

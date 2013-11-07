@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Missy and Matt</title>
+  <title>Missy & Matt | <%= yield(:title) %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= tag :meta, name: "viewport", content: "width=device-width, initial-scale=1.0" %>
+  <meta name="keywords" content="Missy, Matt, wedding, Santa Barbara, marriage, proposal, bride, groom, California, CA, 2014">
   <%= csrf_meta_tags %>
 </head>
 	<body>
 		<%= render 'layouts/header' %>
 		<div class="container">
 			<%= yield %>
-			<%= render 'layouts/footer' %>
 		</div>
 	</body>
 </html>
