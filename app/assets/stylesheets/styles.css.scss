@@ -5,24 +5,31 @@
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans|Amatic+SC);
 @import url(http://fonts.googleapis.com/css?family=Paytone+One);
 @import url(http://fonts.googleapis.com/css?family=Joti+One);
-$baseFontFamily: Paytone One;
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script);
+@import url(http://fonts.googleapis.com/css?family=Italianno);
+@import url(http://fonts.googleapis.com/css?family=Overlock);
+$baseFontFamily: Nobile;
+$headingsFontFamily: Italianno;
 
 /* navbars --> also wells & hero units */
-$navbarBackground: #C3C3E5;
+$navbarBackground: white;
 $navbarBackgroundHighlight: $navbarBackground;
 $dropdownBackground: $navbarBackground;
 
-$bodyBackground: #F1F0FF;
+$bodyBackground: white;
 
-$textColor: #8C489F;
+$textColor: black;
 $navbarLinkColor: $textColor;
 
 $navbarLinkColorHover: #443266;
 $dropdownLinkBackgroundHover: $navbarLinkColorHover;
 
+$navbarBrandColor: black;
+
 @import 'bootstrap';
+
 body{
-    padding-top: 60px;
+    padding-top: 40px;
 }
 
 @import 'bootstrap-responsive';
@@ -47,6 +54,16 @@ body{
         color: $gray;
     }
 }
+
+hr { 
+    display: block; 
+    height: 1px;
+    border: 0; 
+    border-top: 2px solid #ccc;
+    margin: 1em 0; 
+    padding: 0; 
+    width: 90%;
+  }
 
 .carousel {
   position: relative;

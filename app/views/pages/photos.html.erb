@@ -11,19 +11,19 @@
   <div class="carousel-inner">
   
     <% x = 0 %>
-    <% while x < @photos.count %>
+    <% while x < $photos.count %>
       <% if x == 0 %>
         <div class="item active"><!-- class of active since it's the first item -->
-              <img src="<%= @photos[x]['thumb'] %>" />
+              <img src="<%= $photos[x]['thumb'] %>" />
               <div class="carousel-caption">
-                <p><%= @photos[x]['caption'] %></p>
+                <p><%= $photos[x]['caption'] %></p>
         </div>  
     </div>
       <% else %>
   	    <div class="item">
-  	      <img src="<%= @photos[x]['thumb'] %>"/>
+  	      <img src="<%= $photos[x]['thumb'] %>"/>
   	      <div class="carousel-caption">
-  	        <p><%= @photos[x]['caption'] %></p>
+  	        <p><%= $photos[x]['caption'] %></p>
   	      </div>
 	      </div>
         <% end %>

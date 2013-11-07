@@ -22,3 +22,5 @@ doc/
 *.swp
 .project
 .idea
+
+/public/images
