@@ -47,6 +47,10 @@ body{
     background-color: $navbarBackground;
 }
 
+.alert {
+  background-color: $navbarBackground;
+}
+
 .footer{
     margin-top: 50px;
     color: $grayLight;
@@ -64,6 +68,7 @@ hr {
     padding: 0; 
     width: 90%;
   }
+
 
 .carousel {
   position: relative;
