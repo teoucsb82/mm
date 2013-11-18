@@ -1,10 +1,12 @@
 class PagesController < ApplicationController
+
+
   before_filter :authenticate
 
   def authenticate
     authenticate_or_request_with_http_basic('Administration') do |username, password|
       md5_of_password = Digest::MD5.hexdigest(password)
-      username == '' && md5_of_password == '2ee0272b8e1a9705dc3ebe91c10b32f4'
+      username == '' && md5_of_password.downcase == '2ee0272b8e1a9705dc3ebe91c10b32f4'
     end
   end
 
