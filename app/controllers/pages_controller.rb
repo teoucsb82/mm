@@ -17,8 +17,6 @@ class PagesController < ApplicationController
   def details
   end
 
-  def photos
-  end
   
   def rsvp
   end

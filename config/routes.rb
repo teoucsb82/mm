@@ -1,7 +1,6 @@
 Mm::Application.routes.draw do
   get 'home' => 'pages#home'
   get 'details' => 'pages#details'
-  get 'photos' => 'pages#photos'
   get 'rsvp' => 'pages#rsvp'
   get 'directions' => 'pages#directions'
   get 'hotels' => 'pages#hotels'

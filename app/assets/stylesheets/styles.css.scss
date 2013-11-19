@@ -8,6 +8,7 @@
 @import url(http://fonts.googleapis.com/css?family=Dancing+Script);
 @import url(http://fonts.googleapis.com/css?family=Italianno);
 @import url(http://fonts.googleapis.com/css?family=Overlock);
+@import url(http://fonts.googleapis.com/css?family=Buenard);
 $baseFontFamily: Nobile;
 $headingsFontFamily: Italianno;
 
@@ -33,10 +34,20 @@ body{
 }
 
 @import 'bootstrap-responsive';
+ 
 
 .navbar-inner{
     @include box-shadow(none !important);
     border: 0;
+}
+
+span {
+  color: purple;
+}
+
+p {
+  font-family: Buenard;
+  font-size: 1.3em;
 }
 
 .well{
@@ -45,6 +56,10 @@ body{
 
 .hero-unit{
     background-color: $navbarBackground;
+}
+
+.brand {
+  font-family: $headingsFontFamily;
 }
 
 .alert {
@@ -59,6 +74,14 @@ body{
     }
 }
 
+a {
+    color: #339966;
+      text-decoration: underline;
+      &:hover {
+         text-decoration: none;
+       }
+     }
+
 hr { 
     display: block; 
     height: 1px;
@@ -70,131 +93,55 @@ hr {
   }
 
 
-.carousel {
-  position: relative;
-  margin-bottom: 20px;
-  line-height: 1;
+  .box { 
+  padding:20px; 
+  margin-bottom:20px; 
+  background:#EDEDED; 
+  color:#333; 
 }
-.carousel-inner {
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-}
-.carousel-inner > .item {
-  display: none;
-  position: relative;
 
-  -webkit-transition: 0.6s ease-in-out left;
-  -moz-transition: 0.6s ease-in-out left;
-  -o-transition: 0.6s ease-in-out left;
-  transition: 0.6s ease-in-out left;
+.yellow { 
+  background:#FEFFD8; 
+  color:#514721; 
+  border-color:#FEDE91; 
 }
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  display: block;
-  line-height: 1;
+
+.red { 
+  background:#FBE3E4; 
+  color:#8a1f11; 
+  border-color:#FBC2C4; 
 }
-.carousel-inner > .active,
-.carousel-inner > .next,
-.carousel-inner > .prev {
-  display: block;
+
+.green { 
+  background:#dfece9; 
+  color:#1B3F36; 
+  border-color:#B5DFD5; 
 }
-.carousel-inner > .active {
-  left: 0;
+
+.box a { 
+  color:#222; 
+  border-color:#222; 
 }
-.carousel-inner > .next,
-.carousel-inner > .prev {
-  position: absolute;
-  top: 0;
-  width: 100%;
+
+.red a { 
+  color:#8a1f11; 
+  border-color:#8a1f11; 
 }
-.carousel-inner > .next {
-  left: 100%;
+
+.yellow a { 
+  color:#514721; 
+  border-color:#514721; 
 }
-.carousel-inner > .prev {
-  left: -100%;
+
+.green a { 
+  color:#264409; 
+  border-color:#264409; 
 }
-.carousel-inner > .next.left,
-.carousel-inner > .prev.right {
-  left: 0;
-}
-.carousel-inner > .active.left {
-  left: -100%;
-}
-.carousel-inner > .active.right {
-  left: 100%;
-}
-.carousel-control {
-  position: absolute;
-  top: 40%;
-  left: 15px;
-  width: 40px;
-  height: 40px;
-  margin-top: -20px;
-  font-size: 60px;
-  font-weight: 100;
-  line-height: 30px;
-  color: $textColor;
-  text-align: center;
-  background: $navbarBackground;
-  border: 3px solid #ffffff;
-  -webkit-border-radius: 23px;
-  -moz-border-radius: 23px;
-  border-radius: 23px;
-  opacity: 1;
-  filter: alpha(opacity=50);
-}
-.carousel-control.right {
-  left: auto;
-  right: 15px;
-}
-.carousel-control:hover,
-.carousel-control:focus {
-  color: #ffffff;
-  text-decoration: none;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-}
-.carousel-indicators {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  z-index: 5;
-  margin: 0;
-  list-style: none;
-}
-.carousel-indicators li {
-  display: block;
-  float: left;
-  width: 10px;
-  height: 10px;
-  margin-left: 5px;
-  text-indent: -999px;
-  background-color: #ccc;
-  background-color: rgba(255, 255, 255, 0.25);
-  border-radius: 5px;
-}
-.carousel-indicators .active {
-  background-color: #fff;
-}
-.carousel-caption {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 15px;
-  background: $navbarBackground;
-}
-.carousel-caption h4,
-.carousel-caption p {
-  color: $textColor;
-  line-height: 20px;
-  width: 100%;
-      text-align:center;
-}
-.carousel-caption h4 {
-  margin: 0 0 5px;
-}
-.carousel-caption p {
-  margin-bottom: 0;
+
+.box a:hover,
+.red a:hover,
+.yellow a:hover,
+.green a:hover { 
+  color:#000; 
+  border-color:#000; 
 }
