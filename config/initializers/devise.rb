@@ -4,7 +4,7 @@ Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
-  config.secret_key = '347109bc0277e1e96cbab393ee9c5f6943b19bdfb351351311b5706c4c4c972a56a6e1cddfd212f209a1b8d74d45a8b76ec587284547302e10d8c31aec7499ce'
+  config.secret_key = '4d20542b106117bccb4d8a6cbb43f0dfd8a86db0411981d05a93a2e968296d38f0e23efb8a3d55d02545391871ecee987815ea34065166ce1baf7c4e4a2ab151'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -29,7 +29,7 @@ Devise.setup do |config|
   # session. If you need permissions, you should implement that in a before filter.
   # You can also supply a hash where the value is a boolean determining whether
   # or not authentication should be aborted when the value is not present.
-   #config.authentication_keys = [ :password ]
+  # config.authentication_keys = [ :email ]
 
   # Configure parameters from the request object used for authentication. Each entry
   # given should be a request method and it will automatically be passed to the
@@ -98,7 +98,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = '50c49767a5a3abc08d8039535363be7dd871cbd8ef520c9ab62654fe6c9dd667087d12337db80420a30abe727802e0526eb07f49bb49ec9faf331e88ea8588f1'
+  # config.pepper = '3fb21b13161a8580dc9a4d405ad2fc76ecfa1cc32c55569be56d1e3c7b24916e0141b6e2c55e3ec248111c885eded73a6fc84855fcd56ca916e34e4666101f7f'
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -138,7 +138,7 @@ Devise.setup do |config|
 
   # ==> Configuration for :validatable
   # Range for password length. Default is 8..128.
-  config.password_length = 6..128
+  config.password_length = 4..128
 
   # Email regex used to validate email formats. It simply asserts that
   # one (and only one) @ exists in the given string. This is mainly

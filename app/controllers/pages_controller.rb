@@ -1,14 +1,7 @@
 class PagesController < ApplicationController
 
 
-  before_filter :authenticate, :except => :splash
-
-  def authenticate
-    authenticate_or_request_with_http_basic('Administration') do |username, password|
-      md5_of_password = Digest::MD5.hexdigest(password).downcase
-      username == '' && md5_of_password == '2ee0272b8e1a9705dc3ebe91c10b32f4'
-    end
-  end
+  before_filter :authenticate_guest!, except: [:splash]  
 
 
   def home

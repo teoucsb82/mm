@@ -1,4 +1,5 @@
 Mm::Application.routes.draw do
+  devise_for :guests
   get 'home' => 'pages#home'
   get 'details' => 'pages#details'
   get 'rsvp' => 'pages#rsvp'
