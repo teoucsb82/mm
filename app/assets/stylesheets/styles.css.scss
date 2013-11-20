@@ -26,6 +26,8 @@ $navbarLinkColorHover: #443266;
 $dropdownLinkBackgroundHover: $navbarLinkColorHover;
 
 $navbarBrandColor: black;
+$btnPrimaryBackground: $navbarLinkColorHover;
+$btnPrimaryBackgroundHighlight: lighten($btnPrimaryBackground, 10%);
 
 @import 'bootstrap';
 
